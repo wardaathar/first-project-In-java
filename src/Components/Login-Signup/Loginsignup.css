@@ -1,14 +1,14 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 50px;
     background: white;
     padding-bottom: 30px;
-    width:600px ;
-   
+    width: 600px;
 }
-.header{
+
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,26 +16,28 @@
     width: 100%;
     margin-top: 30px;
 }
-.underline{
+
+.underline {
     width: 61px;
     height: 6px;
     background: #3c009d;
     border-radius: 9px;
 }
-.text{
-    font-size: 48px;
-    font: weight 700px;
-    color: #3c009d;
 
+.text {
+    font-size: 48px;
+    font-weight: 700;
+    color: #3c009d;
 }
 
-.inputs{
+.inputs {
     margin-top: 55px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-.input{
+
+.input {
     display: flex;
     align-items: center;
     width: 480px;
@@ -49,49 +51,127 @@
     width: 30px; /* Icon ka size */
     height: 30px;
     margin-right: 20px; /* Image aur input ke beech gap */
-  }
+}
 
-
-.input input{
-    height:50px;
-    width:400px;
+.input input {
+    height: 50px;
+    width: 400px;
     background: transparent;
     border: none;
     outline: none;
     color: #797979;
     font-size: 19px;
 }
-.forget-password{
+
+.forget-password {
     padding-left: 62px;
     margin-top: 27px;
     color: #797979;
     font-size: 18px;
 }
-.forget-password span{
-    
+
+.forget-password span {
     cursor: pointer;
-    color:#3c009d;
+    color: #3c009d;
 }
-.submit-container{
+
+.submit-container {
     display: flex;
-    gap:30px;
-    margin:60px auto;
-    
+    gap: 30px;
+    margin: 60px auto;
 }
-.submit{
+
+.submit {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 220px;
     height: 59px;
     color: #FFF;
-    background:#3c009d;
+    background: #3c009d;
     border-radius: 50px;
     font-size: 19px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.gray {
+    background: #EAEAEA;
+    color: #676767;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Container ko thoda narrow karna */
+        margin-top: 30px;
     }
-    .gray{
-        background: #EAEAEA;
-        color:#676767 ;
+
+    .header .text {
+        font-size: 36px; /* Text size ko thoda chhota karna */
     }
+
+    .input {
+        width: 100%; /* Inputs ko full width dena */
+        height: 70px; /* Inputs ki height thodi reduce karna */
+    }
+
+    .input input {
+        width: calc(100% - 60px); /* Input field ko adjust karna */
+    }
+
+    .submit {
+        width: 48%; /* Buttons ki width thodi chhoti karna */
+    }
+
+    .submit-container {
+        flex-direction: column;
+        gap: 20px;
+        margin: 30px auto;
+    }
+
+    .forget-password {
+        padding-left: 0; /* Padding ko adjust karna */
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Container ko full width dena */
+        margin-top: 20px;
+    }
+
+    .header .text {
+        font-size: 28px; /* Text size ko aur chhota karna */
+    }
+
+    .input {
+        width: 100%; /* Inputs ko full width dena */
+        height: 60px;
+    }
+
+    .input img {
+        width: 25px; /* Icons ko thoda chhota karna */
+        height: 25px;
+    }
+
+    .input input {
+        width: calc(100% - 50px); /* Input fields ko adjust karna */
+    }
+
+    .submit {
+        width: 100%; /* Buttons ko full width dena */
+        height: 50px;
+    }
+
+    .submit-container {
+        flex-direction: column;
+        gap: 15px;
+        margin: 30px auto;
+    }
+
+    .forget-password {
+        font-size: 16px; /* Font size ko chhota karna */
+    }
+}
