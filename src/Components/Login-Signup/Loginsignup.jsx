@@ -2,9 +2,9 @@
 import './Loginsignup.css';
 import React from 'react';
 import { useState } from 'react';
-import user_icon from '../../Assets/me.png';
-import  email_icon from '../../Assets/mail.png';
-import password_icon from '../../Assets/person.png';
+import user_icon from '../../Assets/user.png';
+import  email_icon from '../../Assets/email.png';
+import password_icon from '../../Assets/lock.png';
 
 
 
@@ -20,7 +20,7 @@ const[action, setAction] =useState ('Sign Up');
 
       <div className="inputs">
         {action==="Login"?<div></div>:<div className="input">
-        <img src={user_icon} alt=""/>
+        <img src={user_icon} alt="Name"/>
         <input type="text" placeholder="Name"/>
       </div>
 }
@@ -28,13 +28,13 @@ const[action, setAction] =useState ('Sign Up');
 
       
       <div className="input">
-      <img src={email_icon}alt=""/>
+      <img src={email_icon}alt="email"/>
         <input type="email" placeholder="Email Id"/>
       </div>
 
       
       <div className="input">
-         <img src={password_icon} alt=""/>
+         <img src={password_icon} alt="password"/>
         <input type="password" placeholder="Password"/>
       </div>
       </div>

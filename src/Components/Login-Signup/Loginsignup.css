@@ -44,10 +44,14 @@
     background: #eaeaea;
     border-radius: 6px;
 }
-.input img{
-    margin: 0px 30px;
 
-}
+.input img {
+    width: 30px; /* Icon ka size */
+    height: 30px;
+    margin-right: 20px; /* Image aur input ke beech gap */
+  }
+
+
 .input input{
     height:50px;
     width:400px;
